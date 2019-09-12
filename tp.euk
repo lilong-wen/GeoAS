@@ -1,0 +1,12 @@
+A B C right 
+Angle = 60
+draw
+  (A.B.C)
+  circle(A, B, C)
+end
+
+label
+  A 55deg font("Consolas-Bold-12")
+  B 25deg font("Consolas-Bold-12")
+  C 225deg font("Consolas-Bold-12")
+end
