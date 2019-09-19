@@ -1,0 +1,16 @@
+box -5, -5, 5, 5
+A = point(-4, -4)
+B = point(4, -4)
+C = point(4, 4)
+D = point(-4, 4)
+
+draw
+  circle(A, B, C)
+end
+
+label
+  A 55deg font("Consolas-Bold-12")
+  B 25deg font("Consolas-Bold-12")
+  C 225deg font("Consolas-Bold-12")
+  D 225deg font("Consolas-Bold-12")
+end

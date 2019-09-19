@@ -1,0 +1,11 @@
+box -10, -10, 10, 10
+E = point(0, 0)
+E W F right 6, 30deg, 30deg
+draw
+  (E. W. F)
+end
+label
+  E 180deg font("Consolas-Bold-12")
+  W 0deg font("Consolas-Bold-12")
+  F 90deg font("Consolas-Bold-12")
+end
