@@ -65,7 +65,7 @@ with open(image_name + '.euk', 'w') as tp:
             + point_name_2 + " " 
             + point_name_3 + " "
             + triangle_type + " "
-            + line_length_1 + " "
+            + line_length_1 + ", "
             + first_angle_degree + "deg" + ", "
             + first_line_degree + "deg" + "\n")
 
@@ -74,7 +74,7 @@ with open(image_name + '.euk', 'w') as tp:
             + point_name_2 + " " 
             + point_name_3 + " "
             + triangle_type + " "
-            + line_length_1 + " "
+            + line_length_1 + ", "
             + first_angle_degree + "deg" + ", "
             + first_line_degree + "deg" + "\n")
 
