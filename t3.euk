@@ -1,6 +1,6 @@
 box -10, -10, 10, 10
 A = point(0, 0)
-A B C triangle 6, 45deg, 90deg, 80deg
+A B C isosceles 6, 30deg, 30deg
 draw
     (A.B.C)
 end

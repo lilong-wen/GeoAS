@@ -102,20 +102,73 @@ with open(image_name + '.euk', 'w') as tp:
 
 with open("lable.txt", 'a') as lb:
     if triangle_type == "triangle":
+        if int(first_angle_degree) != 90:
+           lb.write("a " 
+           + "right" + " triangle"
+           + " with points " 
+           + point_name_1 + " "
+           + point_name_2 + " "
+           + point_name_3 + " " + "and angle "
+           + point_name_3 + point_name_1 + point_name_2 + " equals " + "90deg "
+           + "\n")
+        elif int(second_angle_degree) != 90:
+           lb.write("a " 
+           + "right" + " triangle"
+           + " with points " 
+           + point_name_1 + " "
+           + point_name_2 + " "
+           + point_name_3 + " " + "and angle "
+           + point_name_1 + point_name_2 + point_name_3 + " equals " + "90deg "
+           + "\n")            
+        else :
+            lb.write("a " + "normal "
+                + triangle_type 
+                + " with points " 
+                + point_name_1 + " "
+                + point_name_2 + " "
+                + point_name_3 + " " + "and angle "
+                + point_name_3 + point_name_1 + point_name_2 + " equals " + first_angle_degree + "deg "
+                + "and angle"
+                + point_name_1 + point_name_2 + point_name_3 + " equals " + second_angle_degree + "deg "
+                + "\n")
+    if triangle_type == "right" or int(first_angle_degree) == 90 or int(second_angle_degree) == 90:
         lb.write("a " 
-            + triangle_type 
+            + triangle_type + " triangle"
+            + " with points " 
+            + point_name_1 + " "
+            + point_name_2 + " "
+            + point_name_3 + " " + "angle "
+            + point_name_3 + point_name_1 + point_name_2 + " equals " + "90deg "
+            + "\n")
+
+    if triangle_type == "isosceles":
+        lb.write("a " 
+            + triangle_type + " triangle"
             + " with points " 
             + point_name_1 + " "
             + point_name_2 + " "
             + point_name_3 + " " 
-            + point_name_1 + point_name_2 + point_name_3 + "equal" + 
+            + "and"
+            + "line " + point_name_3 + point_name_1 + " equals " 
+            + "line " + point_name_3 + point_name_2 + " and " + "angle "
+            + point_name_3 + point_name_1 + point_name_2 + " equals " + "angle "
+            + point_name_3 + point_name_2 + point_name_1 + " equals " + first_angle_degree
             + "\n")
-    if triangle_type == "right":
-
-    if triangle_type == "isosceles":
-
     if triangle_type == "equilateral":
-        
+        lb.write("a " 
+            + triangle_type + " triangle"
+            + " with points " 
+            + point_name_1 + " "
+            + point_name_2 + " "
+            + point_name_3 + " " 
+            + "and "
+            + "line " + point_name_3 + point_name_1 + " equals " 
+            + "line " + point_name_3 + point_name_2 + " equals "
+            + "line " + point_name_1 + point_name_2 + " and " + "angle "
+            + point_name_3 + point_name_1 + point_name_2 + " equals " + "angle "
+            + point_name_3 + point_name_2 + point_name_1 + " equals " + "angle "
+            + point_name_1 + point_name_3 + point_name_2 + " equals " + "60deg"
+            + "\n")        
 
 cmd = "./convert.sh " + image_name + ".euk"
 os.system(cmd)

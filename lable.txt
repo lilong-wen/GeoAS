@@ -1,1 +1,1 @@
-
+a equilateral triangle with points Q N Z andline ZQ equals line ZN equals line QN and angle ZQN equals angle ZNQ equals angle QZN equals 60deg
